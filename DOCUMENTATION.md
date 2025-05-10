@@ -1,3 +1,5 @@
+# KaizenApp
+
 ## Proceso de configuración
 
 ### Prerrequisitos
