@@ -117,3 +117,4 @@ module.exports = function(api) {
 Crear y configurar `apiConfig.ts` para poder importar la BASE_URL en el proyecto
 
 Crear y configurar `api.ts` para guardar el token de usuario e interceptar las llamadas a la api inyectándolo
+
