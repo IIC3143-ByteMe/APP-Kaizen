@@ -26,3 +26,9 @@ Abrir `package.json` y cambiar la propiedad `main`:
     "main": "expo-router/entry"
 }
 ```
+
+### Crear estructura de carpetas para file-based routing
+
+Crear carpeta `app/` en la raíz y dentro los archivos:
+- `_layout.tsx`: Define el stack global
+- `index.tsx`: Pantalla *Home*
