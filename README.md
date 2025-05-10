@@ -18,3 +18,11 @@ npx create-expo-app KaizenApp --template blank-typescript
 cd KaizenApp
 npx expo install expo-router react-native-safe-area-context react-native-screens expo-linking expo-constants expo-status-bar
 ```
+
+### Ajustar punto de entrada
+Abrir `package.json` y cambiar la propiedad `main`:
+```bash
+{
+    "main": "expo-router/entry"
+}
+```
