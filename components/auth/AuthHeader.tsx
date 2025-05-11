@@ -15,9 +15,6 @@ export default function AuthHeader() {
 const styles = StyleSheet.create({
   header: {
     width,
-    backgroundColor: '#94A9FF',
-    borderBottomLeftRadius: 200,
-    borderBottomRightRadius: 200,
     alignItems: 'center',
     paddingVertical: 60,
   },
