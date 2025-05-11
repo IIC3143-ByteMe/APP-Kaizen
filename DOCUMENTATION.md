@@ -1,6 +1,6 @@
 # KaizenApp
 
-## Proceso de configuración
+## Proceso de Setup
 
 ### Prerrequisitos
 
@@ -119,4 +119,18 @@ module.exports = function(api) {
 Crear y configurar `apiConfig.ts` para poder importar la BASE_URL en el proyecto
 
 Crear y configurar `api.ts` para guardar el token de usuario e interceptar las llamadas a la api inyectándolo
+
+## Entrega 2: Walking Skeleton
+
+Para esta entrega se espera tener un esqueleto que simule el funcionamiento de la aplicación, por eso se trabajarán las siguientes vistas:
+
+- Login
+  - Ingresar
+  - Crear cuenta
+- App
+  - Navbar
+  - Home
+  - Mi progreso
+  - Agregar hábito
+  - Configuración
 
