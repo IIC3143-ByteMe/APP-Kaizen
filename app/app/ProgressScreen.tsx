@@ -1,10 +1,8 @@
-import { Text, View } from "react-native";
+import Progress from "@components/app/progress/Progress";
 
 export default function ProgressScreen() {
   
   return (
-    <View style={{ flex:1, alignItems:"center", justifyContent:"center" }}>
-      <Text>Resumen de tu progreso</Text>
-    </View>
+    <Progress />
   );
 }
