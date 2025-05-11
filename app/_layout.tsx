@@ -1,24 +1,21 @@
 import { Slot, useRouter } from "expo-router";
-import { useEffect, useState } from "react";
-
-const isLoggedIn = false;
+import { useEffect } from "react";
+import { getSessionToken } from "../hooks/useSessionToken";
 
 export default function RootLayout() {
   const router = useRouter();
-  const [ready, setReady] = useState(false);
 
   useEffect(() => {
-    setReady(true);
+    const checkToken = async () => {
+      const token = await getSessionToken();
+      if (token) {
+        router.replace("/app/HomeScreen");
+      } else {
+        router.replace("/auth/AuthScreen");
+      }
+    };
+    checkToken();
   }, []);
-
-  useEffect(() => {
-    if (!ready) return;
-    if (isLoggedIn) {
-      router.replace("/app/HomeScreen");
-    } else {
-      router.replace("/auth/AuthScreen");
-    }
-  }, [ready]);
 
   return <Slot />;
 }
