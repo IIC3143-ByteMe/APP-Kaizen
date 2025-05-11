@@ -1,10 +1,24 @@
-import { Text, View } from "react-native";
+import { View, StyleSheet } from 'react-native';
+import AuthHeader from '@components/auth/AuthHeader';
+import AuthForm from '@components/auth/AuthForm';
+import AuthFooter from '@components/auth/AuthFooter';
 
 export default function Auth() {
-  
   return (
-    <View style={{ flex:1, alignItems:"center", justifyContent:"center" }}>
-      <Text>Ingresa tus credenciales o crea una cuenta</Text>
+    <View style={styles.container}>
+      <AuthHeader />
+      <AuthForm />
+      <AuthFooter />
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#E8EAFD',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingVertical: 40,
+  },
+});

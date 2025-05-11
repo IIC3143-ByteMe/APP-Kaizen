@@ -1,7 +1,7 @@
 import { Slot, useRouter } from "expo-router";
 import { useEffect, useState } from "react";
 
-const isLoggedIn = true;
+const isLoggedIn = false;
 
 export default function RootLayout() {
   const router = useRouter();
