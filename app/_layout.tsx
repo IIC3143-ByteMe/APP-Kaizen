@@ -1,5 +1,24 @@
-import { Stack } from "expo-router";
+import { Slot, useRouter } from "expo-router";
+import { useEffect, useState } from "react";
+
+const isLoggedIn = false;
 
 export default function RootLayout() {
-  return <Stack screenOptions={{ headerShown: false , animation: "none"}} />;
+  const router = useRouter();
+  const [ready, setReady] = useState(false);
+
+  useEffect(() => {
+    setReady(true);
+  }, []);
+
+  useEffect(() => {
+    if (!ready) return;
+    if (isLoggedIn) {
+      router.replace("/app/HomeScreen");
+    } else {
+      router.replace("/auth/AuthScreen");
+    }
+  }, [ready]);
+
+  return <Slot />;
 }
