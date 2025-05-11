@@ -1,6 +1,6 @@
 import { Text, View } from "react-native";
 
-export default function LogIn() {
+export default function Auth() {
   
   return (
     <View style={{ flex:1, alignItems:"center", justifyContent:"center" }}>

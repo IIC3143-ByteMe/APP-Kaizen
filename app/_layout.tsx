@@ -16,7 +16,7 @@ export default function RootLayout() {
     if (isLoggedIn) {
       router.replace("/app/HomeScreen");
     } else {
-      router.replace("/auth/LogInScreen");
+      router.replace("/auth/AuthScreen");
     }
   }, [ready]);
 

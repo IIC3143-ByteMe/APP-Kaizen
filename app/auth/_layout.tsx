@@ -4,7 +4,7 @@ export default function AuthStackLayout() {
   return (
     <Stack>
       <Stack.Screen
-      name="LoginScreen"
+      name="AuthScreen"
       options={{ title: "Iniciar Sesión", headerShown: false }}
       />
       <Stack.Screen
