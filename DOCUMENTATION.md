@@ -134,3 +134,6 @@ Para esta entrega se espera tener un esqueleto que simule el funcionamiento de l
   - Agregar hábito
   - Configuración
 
+## Entrega 3: Backend Connection
+
+Armar correctamente la conexión entre la aplicación, el backend FastAPI y el backend Firebase si fuese necesario.
