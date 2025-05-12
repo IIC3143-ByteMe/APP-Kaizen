@@ -6,7 +6,7 @@ import IconSoundSelectors from '@components/app/add-habit/IconSoundSelectors';
 import HabitScheduleCard from '@components/app/add-habit/HabitScheduleCard';
 import AddButton from '@components/app/add-habit/AddButton';
 
-export default function AddHabit(){
+export default function AddHabitScreen(){
   return (
     <View style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollContent}>

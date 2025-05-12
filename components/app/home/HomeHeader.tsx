@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     marginBottom: 20,
-    paddingVertical: 60,
+    paddingTop: 60,
   },
   greeting: { fontSize: 24, fontWeight: 'bold', color: '#7D89FF' },
   date: { color: '#333', marginTop: 4, fontWeight: '600' },
