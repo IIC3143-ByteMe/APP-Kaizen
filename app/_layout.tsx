@@ -1,5 +1,21 @@
-import { Stack } from "expo-router";
+import { Slot, useRouter } from "expo-router";
+import { useEffect } from "react";
+import { getSessionToken } from "../hooks/useSessionToken";
 
 export default function RootLayout() {
-  return <Stack screenOptions={{ headerShown: false , animation: "none"}} />;
+  const router = useRouter();
+
+  useEffect(() => {
+    const checkToken = async () => {
+      const token = await getSessionToken();
+      if (token) {
+        router.replace("/app/HomeScreen");
+      } else {
+        router.replace("/auth/AuthScreen");
+      }
+    };
+    checkToken();
+  }, []);
+
+  return <Slot />;
 }
