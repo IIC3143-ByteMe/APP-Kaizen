@@ -10,7 +10,7 @@ export default function DailyGoalsCard(){
       <View>
         <Text style={styles.title}>Metas diarias</Text>
         <Text style={styles.subtitle}>¡Sigue así!</Text>
-        <Text style={styles.progress}>2/3 hábitos cumplidos</Text>
+        <Text style={styles.progress}>3/5 hábitos cumplidos</Text>
       </View>
     </View>
   );
